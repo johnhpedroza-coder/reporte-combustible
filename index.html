@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f7f6; }
+        .controls { display: flex; gap: 10px; margin-bottom: 20px; align-items: flex-end; }
+        .geotab-table { width: 100%; border-collapse: collapse; background: white; }
+        .geotab-table th { background: #04436a; color: white; padding: 10px; text-align: left; }
+        .geotab-table td { padding: 10px; border-bottom: 1px solid #ddd; }
+        .vehicle-row { background: #eee; font-weight: bold; }
+        .bar-container { display: flex; align-items: flex-end; gap: 5px; height: 100px; margin-bottom: 20px; background: white; padding: 10px; border-radius: 5px; }
+        .bar { background: #27ae60; width: 30px; transition: height 0.5s; }
+        .btn { padding: 8px 15px; cursor: pointer; border: none; border-radius: 3px; font-weight: bold; }
+        .btn-run { background: #04436a; color: white; }
+        .btn-excel { background: #27ae60; color: white; }
+    </style>
+</head>
+<body>
+    <h2>Eficiencia de Combustible</h2>
+    <div class="controls">
+        <input type="date" id="dateFrom">
+        <input type="date" id="dateTo">
+        <button id="btnRun" class="btn btn-run">Actualizar</button>
+        <button id="btnExcel" class="btn btn-excel">Excel</button>
+    </div>
+    
+    <div id="chart" class="bar-container"></div>
+
+    <table class="geotab-table">
+        <thead>
+            <tr><th>Vehículo / Conductor</th><th>KM</th><th>Litros</th><th>km/L</th></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>
