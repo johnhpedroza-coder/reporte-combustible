@@ -1,0 +1,16 @@
+{
+  "name": "Reporte de Eficiencia de Combustible",
+  "supportEmail": "soporte@tuempresa.com",
+  "items": [
+    {
+      "url": "https://johnhpedroza-coder.github.io/reporte-combustible/index.html",
+      "path": "EngineAndMaintenance/",
+      "menu": "FuelEfficiencyReport",
+      "icon": "https://johnhpedroza-coder.github.io/reporte-combustible/icon.svg",
+      "name": {
+        "en": "Driver Efficiency",
+        "es": "Eficiencia por Conductor"
+      }
+    }
+  ]
+}
